@@ -110,12 +110,6 @@
                 return;
             }
 
-            // Ensure the URL has a protocol
-            let targetUrl = target;
-            if (!target.match(/^https?:\/\//i)) {
-                targetUrl = 'https://' + target;
-            }
-
             if (!isValidUrl(targetUrl)) {
                 showError('Invalid URL', targetUrl);
                 return;
